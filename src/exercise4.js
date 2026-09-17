@@ -4,7 +4,7 @@
 //Add a new field called actualStatus with a number, then print the number of fields the object now has. Hint: Object.keys gives you an array, and arrays have a property that counts.
 //Build an array of three small objects, each with id and result where result is "PASS" or "FAIL", loop over it with for...of, and print id: result for each.
 
-const Testcase ={
+const testcase ={
 id : "TC01",
 name : "Chaitanya",
 number : 900000000,
@@ -12,17 +12,17 @@ isActive : true,
 environment : "www.google.com"
 }
 // prediction - all testcase details
-console.log (Testcase);
+console.log (testcase);
 // prediction - One Line summary of 3 fields that is id, name and environment
-console.log ("One Line Summary:" + `${Testcase.id} executed by ${Testcase.name} on ${Testcase.environment}`);
+console.log ("One Line Summary:" + `${testcase.id} executed by ${testcase.name} on ${testcase.environment}`);
 // prediction - changing isActive true to false
-Testcase.isActive = false;
-console.log(Testcase.isActive);
+testcase.isActive = false;
+console.log(testcase.isActive);
 //prediction - adding of a field to Testcase will increase the count from 5 to 6. The console will display new field
-Testcase.actualStatus = 200;
-console.log(Testcase)
+testcase.actualStatus = 200;
+console.log(testcase)
 // To print the whole objects length
-console.log(Object.keys(Testcase).length);
+console.log(Object.keys(testcase).length);
 
 const publish = [
   { id: "TC-01", result: "PASS" },
